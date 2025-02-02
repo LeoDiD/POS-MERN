@@ -24,7 +24,7 @@ const Home = () => {
           footerNum={3.6} 
         />
       </div>
-      <div className='flex-1 bg-blue-600'></div> {/* Adjusted flex class */}
+      <div className='flex-1 bg-blue-700'></div> {/* Adjusted flex class */}
       <BottomNav />
     </section>
   );
