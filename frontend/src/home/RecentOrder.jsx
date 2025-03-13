@@ -19,7 +19,7 @@ const RecentOrder = () => {
                  className='bg-[#1f1f1f] outline-none text-[#f5f5f5] rounded-b-md'/>
             </div>
 
-            <div className='mt-4 px-6'>
+            <div className='mt-4 px-6 overflow-y-scroll h-[300px] scrollbar-hide'>
                 <OrderList />
                 <OrderList />
                 <OrderList />
