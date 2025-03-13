@@ -4,7 +4,6 @@ import Greetings from '../home/Greetings';
 import MiniCard from '../home/MiniCard';
 import { BsCashCoin } from 'react-icons/bs';
 import { GrinProgress } from 'react-icons/gr';
-import RecentOrder from '../home/RecentOrder';
 
 const Home = () => {
   return (
@@ -25,10 +24,7 @@ const Home = () => {
           footerNum={3.6} 
         />
       </div>
-
-    <RecentOrder />
-
-      <div className='flex-[2] bg-blue-600'></div> {/* Adjusted flex class */}
+      <div className='flex-1 bg-blue-700'></div> {/* Adjusted flex class */}
       <BottomNav />
     </section>
   );
