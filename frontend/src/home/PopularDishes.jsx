@@ -13,24 +13,20 @@ const PopularDishes = () => {
                     </a>
             </div>
 
-            <div>
+            <div className='overflow-y-scroll h-[680px] scrollbar-hide'>
                 {
                     PopularDishes.map((dish) => {
                         return (
-                            <div key={dish.id} className='flex items-center gap-4 bg-[#1f1f1f] rounded-[15px] px-6 py-4 mx-6'>\
-                                <img src='dish.image' alt='dish.name' className='w-[50px] h-[50px] rounded-lg' />
+                            <div key={dish.id} className='flex items-center gap-4 bg-[#1f1f1f] rounded-[15px] px-6 py-4 mx-6 tracking -tracking-wide'>\
+                                <img src={dish.image} alt={dish.name} className='w-[50px] h-[50px] rounded-lg' />
                                 <div>
                                     <h1 className='text-[#f5f5f5] font-semibold'>
                                         {dish.name}
                                     </h1>
-                                    <p className='text-[#ccc]'>
-                                        {dish.category}
+                                    <p className='text-[#f5f5f5] text-sm'>
+                                        <span className='text-[#ababab]'> Orders: </span>
+                                        {dish.numberOfOrders}
                                     </p>
-                                </div>
-                                <div>
-                                    <h1 className='text-[#fff] font-semibold'>
-                                        {dish.price}
-                                    </h1>
                                 </div>
                             </div>
                         )
