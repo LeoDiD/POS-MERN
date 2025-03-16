@@ -3,7 +3,9 @@ import BottomNav from '../components/BottomNav';
 import Greetings from '../home/Greetings';
 import MiniCard from '../home/MiniCard';
 import { BsCashCoin } from 'react-icons/bs';
-import { GrinProgress } from 'react-icons/gr';
+import { GrInProgress } from 'react-icons/gr'; // Ensure this is the correct icon
+import RecentOrder from '../home/RecentOrder';
+import PopularDishes from '../home/PopularDishes'; // Import if missing
 
 const Home = () => {
   return (
@@ -19,11 +21,17 @@ const Home = () => {
         />
         <MiniCard 
           title="In Progress" 
-          icon={<GrinProgress />} 
+          icon={<GrInProgress />} 
           number={16} 
           footerNum={3.6} 
         />
       </div>
+      <RecentOrder /> {/* Fixed incorrect component name */}
+
+      <div className='flex-[2]'>
+        <PopularDishes /> {/* Make sure this component exists */}
+      </div>
+
       <div className='flex-1 bg-blue-700'></div> {/* Adjusted flex class */}
       <BottomNav />
     </section>
