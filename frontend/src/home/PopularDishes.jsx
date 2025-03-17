@@ -1,4 +1,5 @@
 import React from 'react'
+import { popularDishes } from '../constants'
 
 const PopularDishes = () => {
   return (
@@ -15,9 +16,9 @@ const PopularDishes = () => {
 
             <div className='overflow-y-scroll h-[680px] scrollbar-hide'>
                 {
-                    PopularDishes.map((dish) => {
+                    popularDishes.map((dish) => {
                         return (
-                            <div key={dish.id} className='flex items-center gap-4 bg-[#1f1f1f] rounded-[15px] px-6 py-4 mx-6 tracking -tracking-wide'>\
+                            <div key={dish.id} className='flex items-center gap-4 bg-[#1f1f1f] rounded-[15px] px-6 py-4 mx-6 tracking -tracking-wide'>
                                 <img src={dish.image} alt={dish.name} className='w-[50px] h-[50px] rounded-lg' />
                                 <div>
                                     <h1 className='text-[#f5f5f5] font-semibold'>
